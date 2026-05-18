@@ -4,6 +4,12 @@
 
 ---
 
+## 시연 영상
+
+[![AirMouse 시연 영상](https://img.youtube.com/vi/YkKWKDoUBlA/maxresdefault.jpg)](https://youtu.be/YkKWKDoUBlA)
+
+---
+
 ## 동작 원리 요약
 
 ```
