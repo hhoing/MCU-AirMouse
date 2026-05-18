@@ -34,6 +34,16 @@
 
 ---
 
+## 통신 프로토콜
+
+| 프로토콜 | 용도 | 적용 방식 |
+|----------|------|-----------|
+| **UART** | 디버그 로그 출력 | `Serial.begin(115200)` 으로 초기화, `Serial.print()` 로 가속도·속도·커서 이동값 실시간 출력 |
+| **I2C** | MCU ↔ LSM9DS1 센서 통신 | `Arduino_LSM9DS1` 라이브러리를 통한 인터페이스. Arduino Nano 33 BLE에서 LSM9DS1은 내부 I2C 버스로 연결되며, `IMU.readAcceleration()` 등 API 호출 시 I2C 트랜잭션이 발생 |
+| **Bluetooth LE** | MCU → PC 무선 HID 전송 | BLE HID Mouse 프로파일 사용. `mouse.move(dx, dy)` 호출 시 BLE GATT를 통해 커서 이동 패킷 전송 |
+
+---
+
 ## 소프트웨어 구조
 
 ```
